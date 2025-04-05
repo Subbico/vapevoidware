@@ -71,7 +71,7 @@ local function errorNotification(title, text, duration)
 end
 
 function RenderFunctions:GithubHash(repo, owner)
-    local html = httprequest({Url = 'https://github.com/'..(owner or 'Erchobg')..'/'..(repo or 'vapevoidware')}).Body -- had to use this cause "Arceus X" is absolute bs LMFAO
+    local html = httprequest({Url = 'https://github.com/'..(owner or 'Erchobg')..'/'..(repo or 'Subbico')}).Body -- had to use this cause "Arceus X" is absolute bs LMFAO
 	for i,v in next, html:split("\n") do 
 	    if v:find('commit') and v:find('fragment') then 
 	       local str = v:split("/")[5]
@@ -81,7 +81,7 @@ function RenderFunctions:GithubHash(repo, owner)
            end
 	    end
 	end
-    return (repo == 'vapevoidware' and 'source' or 'main')
+    return (repo == 'Subbico' and 'source' or 'main')
 end
 
 function RenderFunctions:CreateLocalDirectory(directory)
@@ -105,7 +105,7 @@ end
     local coreinstalled = 0
     for i,v in next, ({'Universal.lua', 'MainScript.lua', 'NewMainScript.lua', 'GuiLibrary.lua'}) do 
         task.spawn(function()
-            local contents = game:HttpGet('https://raw.githubusercontent.com/Erchobg/vapevoidware/main/'..RenderFunctions:GithubHash()..v)
+            local contents = game:HttpGet('https://raw.githubusercontent.com/Erchobg/Subbico/main/'..RenderFunctions:GithubHash()..v)
             if contents ~= '404: Not Found' then 
                 contents = (tostring(contents:split('\n')[1]):find('Voidware Custom Vape Signed File') and contents or '-- Voidware Custom Vape Signed File\n'..contents)
                 if isfolder('vape') then 
@@ -118,7 +118,7 @@ end
     end
     for i,v in next, ({'6872274481.lua', '6872265039.lua'}) do 
         task.spawn(function()
-            local contents = game:HttpGet('https://raw.githubusercontent.com/Erchobg/vapevoidware/main/CustomModules/'..RenderFunctions:GithubHash()..v)
+            local contents = game:HttpGet('https://raw.githubusercontent.com/Erchobg/Subbico/main/CustomModules/'..RenderFunctions:GithubHash()..v)
             if contents ~= '404: Not Found' then 
                 contents = (tostring(contents:split('\n')[1]):find('Voidware Custom Vape Signed File') and contents or '-- Voidware Custom Vape Signed File\n'..contents)
                 if isfolder('vape') then 
@@ -137,7 +137,7 @@ function RenderFunctions:GetFile(file, onlineonly, custompath, customrepo)
     if not file or type(file) ~= 'string' then 
         return ''
     end
-    customrepo = customrepo or 'vapevoidware'
+    customrepo = customrepo or 'Subbico'
     local filepath = (custompath and custompath..'/'..file or 'vape/Libraries')..'/'..file
     if not isfile(filepath) or onlineonly then 
         local Rendercommit = RenderFunctions:GithubHash(customrepo)

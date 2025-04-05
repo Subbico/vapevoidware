@@ -1,6 +1,6 @@
-VAPEVOIDWARE LICENSE
+Subbico LICENSE
 
-Copyright (c) 2024, VapeVoidware Team
+Copyright (c) 2024, Subbico Team
 
 All rights reserved.
 
@@ -12,7 +12,7 @@ The user, by using, redistributing, or showcasing this project, acknowledges and
 
 - Voidware CONFIGURATION FILE: A "custom configuration" for Voidware using the shared scripting API.
 - REDISTRIBUTION: Distributing the source code of this project, and any source code of this project, and any source code dependent on this project, discluding the loadstring (one line of code that fetches this GitHub project and initializes it, looks something like {
-      "loadstring(game:HttpGet("https://raw.githubusercontent.com/VapeVoidware/vapevoidware/main/NewMainScript.lua", true))()" -- subject to change and is limited only to source files held by the copyright holder.
+      "loadstring(game:HttpGet("https://raw.githubusercontent.com/Subbico/Subbico/main/NewMainScript.lua", true))()" -- subject to change and is limited only to source files held by the copyright holder.
 }), and any configurations.
 
 # Terms and conditions:
@@ -27,7 +27,7 @@ The user, by using, redistributing, or showcasing this project, acknowledges and
 
 5. You MAY edit the file for ONLY personal usage. You may not share anything that is not a Night configuration file.
 
-6. You MUST always include the following Credit string: `Voidware https://github.com/VapeVoidware/vapevoidware`
+6. You MUST always include the following Credit string: `Voidware https://github.com/Subbico/Subbico`
 
 7. You are NOT allowed to claim authorship of the source code provided in this repository.
 
@@ -56,6 +56,6 @@ The user, by using, redistributing, or showcasing this project, acknowledges and
 The following individuals are currently authorized:
 
 - Ercho - @Erchobg (listed by their Github username)
-- Voidware - @VapeVoidware (listed by their YouTube username)
+- Voidware - @Subbico (listed by their YouTube username)
 
 By using this product, you accept these terms.
